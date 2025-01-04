@@ -50,7 +50,7 @@ NTSTATUS wstring::append(wchar_t c) {
     return data.push_back(c);
 }
 
-// ×·¼Ó C ·ç¸ñ¿í×Ö·û´®
+// ×·¼Ó C ·ç¸ñ¿í×Ö·û´®.
 NTSTATUS wstring::append(const wchar_t* str) {
     while (*str) {
         NTSTATUS status = data.push_back(*str);
